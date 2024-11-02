@@ -18,10 +18,19 @@ function draw() {
             square.appendChild(insideSquare);
 
             insideSquare.addEventListener('mouseover', () => {
-                insideSquare.style.backgroundColor = "black";
+                insideSquare.style.backgroundColor = `rgb(${randomNumRGB()} ${randomNumRGB()} ${randomNumRGB()})`;
             });
         }   
     }
+}
+
+function randomNumRGB() {
+    min = 0;
+    max = 255;
+    
+    random = min + Math.floor(Math.random() * (max - min + 1));
+    
+    return random;
 }
 
 squareCount = 64;
