@@ -19,6 +19,7 @@ function draw() {
 
             insideSquare.addEventListener('mouseover', () => {
                 insideSquare.style.backgroundColor = `rgb(${randomNumRGB()} ${randomNumRGB()} ${randomNumRGB()})`;
+                insideSquare.style.opacity = '0.1';
             });
         }   
     }
